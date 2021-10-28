@@ -1,0 +1,59 @@
+<% include ../partials/header.ejs %>
+
+  <!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="titleTextField">Book Title</label>
+                    <input type="text" class="form-control"
+                    id="titleTextField"
+                    placeholder="Enter the Book Title"
+                    name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextArea">Description</label>
+                    <textarea type="text" class="form-control"
+                    id="descriptionTextArea"
+                    placeholder="Enter the a brief description of the book"
+                    name="description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceTextField">Price</label>
+                    <input type="text" class="form-control"
+                    id="priceTextField"
+                    placeholder="Enter the Book's Price"
+                    name="price" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField">Author</label>
+                    <input type="text" class="form-control"
+                    id="authorTextField"
+                    placeholder="Enter the Book's Author"
+                    name="author" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genreTextField">Genre</label>
+                    <input type="text" class="form-control"
+                    id="genreTextField"
+                    placeholder="Enter the Genre"
+                    name="genre" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit</button>
+                
+                    <a href="/books" class="btn btn-warning">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+<% include ../partials/footer.ejs %>
+
+
